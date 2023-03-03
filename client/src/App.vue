@@ -1,15 +1,18 @@
 <template>
     <v-app>
-        <v-main>
-            <TheLayoutVue></TheLayoutVue>
-        </v-main>
+        <TheHeader></TheHeader>
+        <TheView></TheView>
     </v-app>
 </template>
 
 <script setup>
-import TheLayoutVue from "./layout/TheLayout.vue";
-
-components: {
-    TheLayoutVue;
-}
+import TheHeader from "./layout/TheHeader.vue";
+import TheView from "./layout/TheView.vue";
 </script>
+
+<style>
+a {
+    color: black;
+    text-decoration: none;
+}
+</style>
